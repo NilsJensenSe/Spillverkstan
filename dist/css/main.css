@@ -604,11 +604,15 @@ button {
   p {
     font-size: 0.9rem;
   }
+  .btn {
+    margin: 1rem;
+  }
   #hem-1 .content .knappar {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 2rem 0;
   }
   #portfolio-1 .custom {
     grid-template-columns: 1fr;
