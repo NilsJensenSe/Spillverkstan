@@ -1,0 +1,653 @@
+.container {
+  max-width: 1200px;
+  padding: 1rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.rubrik {
+  padding-bottom: 1.2rem;
+}
+
+.produkt {
+  margin: 1rem;
+}
+.produkt img {
+  width: 400px;
+  margin: 0.5rem 1rem;
+}
+
+.btn {
+  color: #FADCC3;
+  border: 2px solid #FADCC3;
+  padding: 1rem 2rem;
+  margin: 2rem;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.btn:hover {
+  border: 2px solid #374323;
+  color: #374323;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Baskerville", sans-serif;
+  line-height: 1.8;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 700;
+  font-size: 7rem;
+}
+
+h2 {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #CAD7B4;
+  line-height: 1.2;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #FADCC3;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #FADCC3;
+}
+
+p {
+  font-size: 1rem;
+  color: #CAD7B4;
+}
+
+button {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 1.2rem;
+  background: transparent;
+}
+
+#navbar {
+  background: #374323;
+  color: #CAD7B4;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+#navbar .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+#navbar .content #logo img {
+  width: 100px;
+  padding: 0.5rem 1rem;
+}
+#navbar .content #sidebar {
+  display: flex;
+  padding: 0 1rem;
+}
+#navbar .content #sidebar li {
+  padding: 0 2rem;
+}
+#navbar .content #sidebar li :hover {
+  color: #31231C;
+}
+#navbar .content #sidebar li a {
+  color: #CAD7B4;
+  font-size: 1.2rem;
+  transition: 0.2s;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #CAD7B4;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+#hem-1 {
+  background: url("../img/Header1.webp") no-repeat center center/cover;
+  height: 100vh;
+  color: #CAD7B4;
+  line-height: 1.2;
+}
+#hem-1 .content {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 16vh 0 0 0;
+}
+#hem-1 .content img {
+  width: 200px;
+  padding: 0.5rem 1rem;
+}
+#hem-1 .content h3 {
+  color: #FADCC3;
+}
+#hem-1 .content .knappar {
+  padding: 4rem 0;
+}
+
+#hem-2 {
+  background: #374323;
+  color: #CAD7B4;
+  line-height: 1.2;
+}
+#hem-2 .content {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hem-2 .content .left {
+  padding: 1rem;
+}
+#hem-2 .content .left .rubrik h3 {
+  color: #FADCC3;
+}
+#hem-2 .content .left p {
+  line-height: 1.6;
+}
+#hem-2 .content .right img {
+  width: 400px;
+  padding: 1rem;
+}
+
+#portfolio-1 {
+  background: #31231C;
+  color: #FADCC3;
+  line-height: 1.2;
+}
+#portfolio-1 .content {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+#portfolio-1 .content img {
+  width: 300px;
+}
+#portfolio-1 .content .rubrik {
+  padding-top: 2rem;
+}
+#portfolio-1 .content .rubrik h2 {
+  color: #CAD7B4;
+}
+#portfolio-1 .content .custom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#portfolio-1 .content .produkt h3 {
+  font-size: 1rem;
+}
+#portfolio-1 .content .produkt p {
+  font-size: 0.8rem;
+  padding-top: 0.4rem;
+}
+#portfolio-1 .content .btn {
+  margin: 0;
+  width: 100%;
+  cursor: pointer;
+}
+#portfolio-1 .content .btn:hover {
+  border: #FADCC3;
+  background: #FADCC3;
+  margin: 0;
+}
+
+#reparationer-1 {
+  background: #303a1f;
+  color: #CAD7B4;
+}
+#reparationer-1 .content {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+#kontakt-1 {
+  background: #31231C;
+  color: #FADCC3;
+  padding: 0 0 1rem 0;
+}
+#kontakt-1 .rubrik {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+#kontakt-1 .content {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+}
+#kontakt-1 .content .kontaktinfo img {
+  width: 400px;
+  padding-right: 6rem;
+}
+#kontakt-1 .content .form h3 {
+  font-size: 1rem;
+}
+#kontakt-1 .content .form .mindre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 4rem;
+}
+#kontakt-1 .content .form input, #kontakt-1 .content .form textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  margin-bottom: 1.2rem;
+  border: 1px solid #CAD7B4;
+  color: #CAD7B4;
+  background: #31231C;
+  padding: 0.6rem;
+  border-radius: 10px;
+}
+#kontakt-1 .content .form textarea {
+  height: 200px;
+}
+#kontakt-1 .content .form .btn {
+  margin: 0;
+  width: 100%;
+  cursor: pointer;
+}
+#kontakt-1 .content .form .btn:hover {
+  border: #FADCC3;
+  background: #FADCC3;
+}
+
+#footer {
+  background: #374323;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+#footer a {
+  font-size: 1rem;
+  transition: 0.2s;
+}
+#footer a:hover {
+  color: #31231C;
+}
+
+#tack {
+  background: url("../img/header1.webp") no-repeat center center/cover;
+  height: 100vh;
+  color: #CAD7B4;
+  line-height: 1.2;
+}
+#tack .content {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 16vh 0 0 0;
+}
+#tack .content img {
+  width: 200px;
+  padding: 0.5rem 1rem;
+}
+#tack .content .knappar {
+  padding: 4rem 0;
+}
+
+#produktsida {
+  background-color: #31231C;
+  padding-top: 4rem;
+}
+#produktsida .content {
+  display: flex;
+}
+#produktsida .content .left {
+  padding-right: 2rem;
+}
+#produktsida .content .left .stor img {
+  width: 500px;
+  cursor: pointer;
+}
+#produktsida .content .left .mindre {
+  display: flex;
+  margin-top: 1rem;
+}
+#produktsida .content .left .mindre img {
+  width: 100px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#produktsida .content .left .mindre img:hover {
+  transform: scale(1.05);
+}
+#produktsida .content .right .info .section {
+  margin-bottom: 1rem;
+}
+#produktsida .content .right .info .section h4 {
+  cursor: pointer;
+  position: relative;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 0;
+}
+#produktsida .content .right .info .section h4:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+#produktsida .content .right .info .section p {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  position: relative;
+  margin: 0;
+  padding: 0.5rem;
+}
+#produktsida .content .right .info .section .content-hidden {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 0.5rem;
+}
+#produktsida .content .right .info .section .content-hidden .typsnitt img {
+  width: 150px;
+}
+#produktsida .content .right .info .section.active .content-hidden {
+  max-height: 500px;
+  padding: 0.5rem;
+}
+
+/* Lightbox */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: transform 0.2s ease;
+  cursor: zoom-in;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: block;
+  margin: 0 auto;
+}
+#lightbox button, #lightbox .close {
+  position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+#lightbox .close {
+  top: 20px;
+  right: 30px;
+}
+#lightbox #prev {
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#lightbox #next {
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#lightbox.hidden {
+  display: none !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Max-width 1400px */
+@media (max-width: 1400px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  #hem-1 {
+    height: 80vh;
+  }
+  #hem-2 .content {
+    padding: 2rem;
+  }
+  #portfolio-1 .content .custom {
+    grid-template-columns: 1fr 1fr;
+  }
+  #reparationer-1 .content {
+    padding: 2rem;
+  }
+  #kontakt-1 {
+    padding: 0 2rem;
+  }
+}
+/* Max-width 1000px */
+@media (max-width: 1000px) {
+  #navbar .content {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  #kontakt-1 .content .form .mindre {
+    grid-template-columns: 1fr;
+  }
+  #produktsida .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #produktsida .content .left {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  #portfolio-1 .custom {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* Max-width 800px */
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  #navbar .content {
+    flex-direction: row;
+    padding: 0.5rem;
+  }
+  #navbar .content #logo img {
+    width: 80px;
+  }
+  #hem-2 .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  #hem-2 .content .right img {
+    width: 300px;
+  }
+  #portfolio-1 .content .custom {
+    grid-template-columns: 1fr;
+  }
+  #kontakt-1 .content {
+    flex-direction: column;
+  }
+  #kontakt-1 .content .kontaktinfo {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  #kontakt-1 .content .kontaktinfo img {
+    width: 300px;
+    padding-right: 0;
+  }
+}
+@media (max-width: 800px) {
+  #sidebar {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    background: #374323;
+    flex-direction: column;
+    width: 70%;
+    max-width: 300px;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  #sidebar li {
+    padding: 1rem 0;
+  }
+  #sidebar li a {
+    display: block;
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  #sidebar.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.4rem 2rem;
+  }
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #CAD7B4;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  /* X-animation */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -10px);
+  }
+}
+/* Max-width 600px */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  #hem-1 .content .knappar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #portfolio-1 .custom {
+    grid-template-columns: 1fr;
+  }
+  #produktsida .content .left .stor img {
+    width: 320px;
+  }
+  #produktsida .content .left .mindre img {
+    width: 70px;
+  }
+}
+/* Max-width 450px */
+@media (max-width: 450px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  #navbar #logo img {
+    width: 80px;
+  }
+  #produktsida .content .left .stor img {
+    width: 300px;
+  }
+  #produktsida .content .left .mindre img {
+    width: 54px;
+  }
+  .produkt {
+    margin: 0;
+  }
+}
+/* Max-height 600px */
+@media (max-height: 600px) {
+  #hem-1 {
+    height: auto;
+    padding: 2rem 0;
+  }
+  #lightbox img {
+    max-height: 60%;
+  }
+}/*# sourceMappingURL=main.css.map */

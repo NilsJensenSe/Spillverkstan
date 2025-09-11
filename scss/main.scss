@@ -1,0 +1,502 @@
+@import "variables";
+@import "utilities";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Libre Baskerville", sans-serif;
+    line-height: 1.8;
+    background: $white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 700;
+    font-size: 7rem;
+}
+
+h2 {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: $green1;
+    line-height: 1.2;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    color: $brown1;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: $brown1;
+}
+
+p {
+    font-size: 1rem;
+    color: $green1;
+}
+
+button {
+    font-family: "Libre Baskerville", sans-serif;
+    font-size: 1.2rem;
+    background: transparent;
+}
+
+
+// Navbar
+#navbar {
+    background: $green2;
+    color: $green1;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+
+        #logo {
+            img {
+                width: 100px;
+                padding: 0.5rem 1rem
+            }
+        }
+
+        #sidebar {
+            display: flex;
+            padding: 0 1rem;
+
+            li {
+                padding: 0 2rem;
+
+                :hover {
+                    color: $brown2;
+                }
+
+                a {
+                    color: $green1;
+                    font-size: 1.2rem;
+                    transition: 0.2s;
+                }
+
+            }
+        }
+    }
+}
+
+// Hamburger-meny
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  span {
+    height: 3px;
+    width: 25px;
+    background: $green1;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+}
+
+// Header
+#hem-1 {
+    background: url("../img/Header1.webp") no-repeat center center/cover;
+    height: 100vh;
+    color: $green1;
+    line-height: 1.2;
+
+    .content {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 16vh 0 0 0;
+
+        img {
+            width: 200px;
+            padding: 0.5rem 1rem
+        }
+
+        h3 {
+            color: $brown1;
+        }
+
+        .knappar {
+            padding: 4rem 0;
+        }
+    }
+}
+
+// Om Spillverkstan 
+#hem-2 {
+    background: $green2;
+    color: $green1;
+    line-height: 1.2;
+
+    .content {
+        padding: 5rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left {
+            padding: 1rem;
+
+              .rubrik {
+
+                 h3 {
+                    color: $brown1;
+                 }
+               }
+
+                p {
+                   line-height: 1.6;
+                 }
+            }
+
+        .right {
+            img {
+                width: 400px;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+// Portfolio 1
+#portfolio-1 {
+    background: $brown2;
+    color: $brown1;
+    line-height: 1.2;
+
+    .content {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4rem;
+
+        img {
+            width: 300px;
+        }
+
+        .rubrik {
+            padding-top: 2rem;
+
+            h2 {
+                color: $green1;
+            }
+        }
+
+        .custom {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .produkt {
+            h3 {
+            font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+                padding-top: 0.4rem;
+            }
+        }
+       
+        .btn {
+            margin: 0;
+            width: 100%;
+            cursor: pointer;
+
+            &:hover {
+                border: $brown1;
+                background: $brown1;
+                margin: 0;
+            }
+        }
+
+    }
+}
+
+// Reparationer 1
+#reparationer-1 {
+    background: $green3;
+    color: $green1;
+
+    .content {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 0;
+    }
+}
+
+
+// Kontakt 1
+#kontakt-1 {
+    background: $brown2;
+    color: $brown1;
+    padding: 0 0 1rem 0;
+
+    .rubrik {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    .content {
+        display: flex;
+        padding: 1rem 0;
+        justify-content: center;
+
+        .kontaktinfo {
+            img {
+                width: 400px;
+                padding-right: 6rem;
+            }
+        }
+
+        .form {
+            h3 {
+                font-size: 1rem;
+            }
+
+            .mindre {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0 4rem;
+            }
+
+            input, textarea {
+                font-family: inherit;
+                font-size: 1rem;
+                display: block;
+                width: 100%;
+                margin-bottom: 1.2rem;
+                border: 1px solid $green1;
+                color: $green1;
+                background: $brown2;
+                padding: 0.6rem;
+                border-radius: 10px;
+            }
+
+            textarea {
+                height: 200px;
+            }
+
+            .btn {
+                margin: 0;
+                width: 100%;
+                cursor: pointer;
+
+                &:hover {
+                    border: $brown1;
+                    background: $brown1;
+                }
+            }
+        }
+    }
+}
+
+// Footer
+#footer {
+    background: $green2;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+    a {
+        font-size: 1rem;
+        transition: 0.2s;
+
+        &:hover {
+            color: $brown2;
+        }
+    }
+}
+
+// Tack efter formuläret
+#tack {
+    background: url("../img/header1.webp") no-repeat center center/cover;
+    height: 100vh;
+    color: $green1;
+    line-height: 1.2;
+
+    .content {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 16vh 0 0 0;
+
+        img {
+            width: 200px;
+            padding: 0.5rem 1rem
+        }
+
+        .knappar {
+            padding: 4rem 0;
+        }
+    }
+}
+
+
+// Produktsidor
+#produktsida {
+  background-color: $brown2;
+  padding-top: 4rem;
+
+  .content {
+    display: flex;
+
+    .left {
+      padding-right: 2rem;
+
+      .stor img {
+        width: 500px;
+        cursor: pointer;
+      }
+
+      .mindre {
+        display: flex;
+        margin-top: 1rem;
+
+        img {
+          width: 100px;
+          margin-right: 0.5rem;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+
+    .right {
+      .info {
+        .section {
+          margin-bottom: 1rem;
+
+          h4 {
+            cursor: pointer;
+            position: relative;
+            padding: 0.5rem;
+            background: rgba(0,0,0,0.1);
+            border-radius: 4px;
+            margin: 0;
+
+            &:hover {
+              background: rgba(0,0,0,0.1);
+            }
+          }
+
+          p {
+            background: rgba(0,0,0,0.1);
+            border-radius: 4px;
+            position: relative;
+            margin: 0;
+            padding: 0.5rem;
+          }
+
+          .content-hidden {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, padding 0.5s ease;
+            padding: 0 0.5rem;
+
+            .typsnitt {
+                img {
+                    width: 150px;
+                }
+            }
+          }
+
+          &.active .content-hidden {
+            max-height: 500px; // tillräckligt högt
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Lightbox */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+
+  img {
+  max-width: 90%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
+  object-fit: contain;  // ✅ håller originalförhållandet
+  transition: transform 0.2s ease;
+  cursor: zoom-in;
+  user-select: none;
+  display: block;
+  margin: 0 auto;
+  }
+
+  button, .close {
+    position: absolute;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .close { top: 20px; right: 30px; }
+  #prev { left: 30px; top: 50%; transform: translateY(-50%); }
+  #next { right: 30px; top: 50%; transform: translateY(-50%); }
+
+    &.hidden {
+    display: none !important;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+// Import Media Queries
+@import "media";

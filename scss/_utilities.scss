@@ -1,0 +1,33 @@
+.container {
+    max-width: 1200px;
+    padding: 1rem;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .rubrik {
+    padding-bottom: 1.2rem;
+  }
+
+  .produkt {
+    margin: 1rem;
+
+    img {
+      width: 400px;
+      margin: 0.5rem 1rem;
+    }
+  }
+
+  .btn {
+    color: $brown1;
+    border: 2px solid $brown1;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    border-radius: 20px;
+    transition: 0.2s;
+
+    &:hover {
+       border: 2px solid $green2;
+       color: $green2;
+    }
+  }

@@ -1,0 +1,238 @@
+/* Max-width 1400px */
+@media (max-width: 1400px) {
+  h1 { font-size: 5rem; }
+  h2 { font-size: 3rem; }
+
+  #hem-1 {
+    height: 80vh;
+  }
+
+  #hem-2 {
+    .content {
+        padding: 2rem;
+    }
+  }
+
+  #portfolio-1 {
+    .content {
+    .custom {
+      grid-template-columns: 1fr 1fr;
+     }
+    }
+  }
+
+  #reparationer-1 {
+    .content {
+      padding: 2rem;
+    }
+  }
+
+  #kontakt-1 {
+      padding: 0 2rem;
+  }
+}
+
+/* Max-width 1000px */
+@media (max-width: 1000px) {
+  #navbar .content {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  #kontakt-1 {
+    .content {
+        .form {
+            .mindre {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+  }
+
+  #produktsida .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .left {
+      padding-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  #portfolio-1 .custom {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Max-width 800px */
+@media (max-width: 800px) {
+  h1 { font-size: 3.5rem; }
+  h2 { font-size: 2.5rem; }
+
+    #navbar .content {
+    flex-direction: row;
+    padding: 0.5rem;
+
+    #logo img {
+      width: 80px;
+    }
+  }
+
+  #hem-2 .content {
+    flex-direction: column;
+    text-align: center;
+
+    .right img {
+      width: 300px;
+    }
+  }
+
+  #portfolio-1 .content .custom {
+    grid-template-columns: 1fr;
+  }
+
+  #kontakt-1 .content {
+    flex-direction: column;
+
+    .kontaktinfo {
+        text-align: center;
+        padding-bottom: 2rem;
+
+        img {
+      width: 300px;
+      padding-right: 0;
+    }
+}
+  }
+}
+
+// Hamburger-meny
+@media (max-width: 800px) {
+  #sidebar {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8); // gömd från början
+    opacity: 0;
+    background: $green2;
+    flex-direction: column;
+    width: 70%;
+    max-width: 300px;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    pointer-events: none; // gör att man inte kan klicka när gömd
+    transition: all 0.3s ease;
+
+    li {
+      padding: 1rem 0;
+
+      a {
+        display: block;
+        padding: 2rem 0; // "klickyta"
+        font-size: 1.2rem; // lite större text (valfritt)
+        border-bottom: 1px solid rgba(255,255,255,0.2); // tunn linje mellan länkar
+      }
+    }
+  }
+
+  #sidebar.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    pointer-events: auto; // aktivera klick
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.4rem 2rem;
+
+    span {
+      height: 3px;
+      width: 25px;
+      background: $green1;
+      margin: 4px 0;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  /* X-animation */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -10px);
+  }
+}
+
+
+/* Max-width 600px */
+@media (max-width: 600px) {
+  h1 { font-size: 3rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.5rem; }
+  p { font-size: 0.9rem; }
+
+    #hem-1 {
+        .content .knappar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+  #portfolio-1 .custom {
+    grid-template-columns: 1fr;
+  }
+
+  #produktsida .content .left .stor img {
+    width: 320px;
+  }
+
+  #produktsida .content .left .mindre img {
+    width: 70px;
+  }
+  
+}
+
+/* Max-width 450px */
+@media (max-width: 450px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+
+  #navbar #logo img {
+    width: 80px;
+  }
+
+  #produktsida .content .left .stor img {
+    width: 300px;
+  }
+
+  #produktsida .content .left .mindre img {
+    width: 54px;
+  }
+
+  .produkt {
+    margin: 0;
+  }
+}
+
+/* Max-height 600px */
+@media (max-height: 600px) {
+  #hem-1 {
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  #lightbox img {
+    max-height: 60%;
+  }
+}

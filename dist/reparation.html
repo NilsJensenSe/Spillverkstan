@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+</style>
+
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Spillverkstan</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="content">
+            <a href="index.html" id="logo">
+                <img src="./img/Spillverkstan Logga Gron.webp" alt="Spillverkstan"></a> 
+
+                    <!-- Hamburger -->
+                    <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </div>
+            <ul id="sidebar">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="portfolio.html">Porfolio</a></li>
+                <li><a href="reparation.html">Reparation</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="reparationer-1">
+        <div class="container content">
+            <div class="rubrik">
+                <h3>När något gått sönder</h3>
+                <h2>REPARATIONER</h2>
+            </div>
+            <div class="text">
+                <p>
+                Jag reparerar och modifierar gärna dina lädervaror! Skicka helbild på
+                föremålet samt en bild på den eventuella skadan, beskriv problemet och
+                önskad åtgärd i formuläret nedan så återkommer jag med en
+                prisuppskattning. Har du köpt varan hos mig så reparerar/modifierar jag
+                dem gratis mot porto så länge dem slitits på ett förväntat och rimligt sätt
+                </p>
+                <br>
+                <p>I formuläret nedan, beskriv gärna följande då det gör det lättare för mig att ge dig en bättre prisuppskattning:</p>
+                <ul>
+                    <li>Föremål</li>
+                    <li>Storlek</li>
+                    <li>Skada/Problem</li>
+                    <li>Önskad åtgärd</li>
+                    <li>Om du köpt varan hos Spillverkstan</li>
+                    <li>Övriga Önskemål</li>
+            </div>
+        </div>
+    </section>
+
+        <section id="kontakt-1">
+        <div class="container">
+            <div class="rubrik">
+                    <h3>Vad händer nu?</h3>
+                    <h2>KONTAKT</h2>
+                <p>
+                    Jag är tacksam för att du vill stötta detta uppdrag jag åtagit mig. Om du
+                    lägger en beställning och samtidigt vill skänka något läder som ligger och
+                    skräpar i någon byrå hemma så tas det i beaktning vid prissättning! Ingen
+                    bit är för liten eller för gammal. Det vinner både du, jag och naturen på.
+                    Tack på förhand!
+                </p>
+            </div>
+            <div class="content">
+                <div class="kontaktinfo">
+                    <img src="img/Daniel2.webp" alt="Daniel Kyhlström">
+                    <h3>Spillverkstan</h3>
+                    <p>Daniel Kyhlström</p>
+                    <p>+46 706 37 99 07</p>
+                    <p>daniel@spillverkstan.se</p>
+                </div>
+
+                <form class="form" form action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Ändra access KEY -->
+                    <input type="hidden" name="access_key" value="9e17da6f-b47c-45ea-addf-1ee0e3cc0ebc">
+
+                    <div class="mindre">
+                    <div>
+                        <h3>Förnamn *</h3>
+                        <input type="text" name="fornamn" required>
+                    </div>
+                    <div>
+                        <h3>Efternamn *</h3>
+                        <input type="text" name="efternamn" required>
+                    </div>
+                    <div>
+                        <h3>E-post *</h3>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div>
+                        <h3>Telefonnummer</h3>
+                        <input type="tel" name="telefon">
+                    </div>
+                    </div>
+                    <h3>Beställa produkt/Reparation/Övrigt *</h3>
+                    <input type="text" name="bestalla" required>
+                    <h3>Beskrivning *</h3>
+                    <textarea name="Beskrivning" name="beskrivning" required></textarea>
+
+                    <h3>Bifoga bild (valfritt)</h3>
+                    <input type="file" id="file-input" name="attachment" accept="image/*">
+
+                    <!-- Spamkontroll -->
+                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                     <!-- Skicka till tacksida efteråt -->
+                     <input type="hidden" name="redirect" value="https://spillverkstan.se/tack">
+
+                    <button type="submit" class="btn">Skicka</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; Spillverkstan, Daniel Kyhlström</p>
+        <p>Hemsida designad och skapad av <a href="https://Nilsjensen.se" target="_blank">Nils Jensen</a></p>
+    </footer>
+
+        <script src="./js/main.js"></script>
+
+</body>
+</html>
